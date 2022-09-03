@@ -53,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-sonarjs": "^0.13.0",
     "fs-extra": "^9.0.1",
+    "gh-pages": "^4.0.0",
     "mocha": "^8.0.1",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
@@ -69,5 +70,7 @@
       "src/hooks",
       "src/tests"
     ]
-  }
+  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
 }
