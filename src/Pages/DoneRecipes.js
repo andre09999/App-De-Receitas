@@ -43,7 +43,7 @@ export default function DoneRecipes() {
           type="button"
           data-testid="filter-by-food-btn"
           onClick={ () => typeFiltered('food') }
-          className="buton-recipes-favorites"
+          className="button-category"
         >
           Food
         </button>
@@ -51,7 +51,7 @@ export default function DoneRecipes() {
           type="button"
           data-testid="filter-by-drink-btn"
           onClick={ () => typeFiltered('drink') }
-          className="buton-recipes-favorites"
+          className="button-category"
         >
           Drinks
         </button>
@@ -59,7 +59,7 @@ export default function DoneRecipes() {
           type="button"
           data-testid="filter-by-all-btn"
           onClick={ () => typeFiltered('all') }
-          className="buton-recipes-favorites"
+          className="button-category"
         >
           All
         </button>
@@ -120,17 +120,12 @@ export default function DoneRecipes() {
             </div>
             {msgCopy && <p>Link copied!</p>}
             <h3 data-testid={ `${index}-horizontal-done-date` }>{favorite.doneDate}</h3>
-            {favorite.tags.map((e, key) => (
-              <div key={ key }>
-                <h3
-                  data-testid={ `${index}-${e}-horizontal-tag` }
-                >
-                  { e }
+            <h3
+              data-testid={ `${index}-${favorite.tags}-horizontal-tag` }
+            >
+              { favorite.tags }
 
-                </h3>
-
-              </div>
-            ))}
+            </h3>
           </div>
         ))
         }
