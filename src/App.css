@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap') ;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap') ;
+
+body {
+  background-color: rgb(155, 203, 235);
+  color: hsl(0, 0%, 27%);
+  font-family: Inter , sans-serif;
+}
+
+header {
+  align-items: center;
+  background: hsl(26, 95%, 61%);
+  color: #464646;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.header-princ {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn-header-profile {
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+}
+
+.search-bar {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.foto-foods {
+  border-radius: 20px;
+  height: 20vh;
+  width: 25vw;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  background: hsl(26, 95%, 61%);
+  bottom: 0;
+  color: #464646;
+  font-family: sans-serif;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.button-icon-footer-foods {
+  background-color: hsla(204, 67%, 76%, 0);
+  border: none;
+  margin-left: 30vw;
+}
+
+.button-icon-footer-drinks {
+  background-color: hsla(204, 67%, 76%, 0);
+  border: none;
+  margin: 5px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.recipes {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2vw;
+}
+
+.Category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2vw;
+  text-align: center;
+}
+
+.card-recipes {
+  padding: 2vw;
+}
+
+.button-Recipes {
+  background-color: hsl(50, 86%, 59%);
+  border: none;
+  border-radius: 50px 20px;
+  color: #464646;
+  font-family: sans-serif;
+  padding: 5vw;
+}
+
+.recomendation-foods {
+  align-content: stretch;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card-recommended {
+  background-color: hsl(204, 67%, 76%);
+  border: none;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+}
+
+.btn-start-recipe-area {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.profile-done-btn {
+  border: none;
+}
+
+.btn-start-recipe {
+  background-color: hsl(26, 95%, 61%);
+  bottom: 0;
+  color: #464646;
+  font-family: sans-serif;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+}
+
+.container:hover input {
+  background-color: #ccc;
+}
+
+.container input:checked {
+  background-color: #ff0a54;
+}
+
+.title-login {
+  color: hsl(204, 67%, 76%);
+  font-family: Qwitcher Grypen , cursive;
+  font-size: 45px;
+  -webkit-text-stroke: 0.5px hsl(50, 86%, 59%);
+}
+
+@media screen and ( min-width : 480px ) {
+
+  .foto-foods {
+    height: 25vh;
+    width: 15vw;
+  }
+
+  .ingredient-details {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 50vw;
+  }
+
+  .img-details {
+    border-radius: 20px;
+    height: 45vh;
+  }
+
+  .video {
+    height: 45vh;
+    width: 40vw;
+  }
+
+  .login {
+    align-items: center;
+    background-color: hsl(26, 95%, 61%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: space-around;
+    width: 25vw;
+  }
+
+  .container-login {
+    border: 50px;
+    margin-left: 80vh;
+    margin-top: 25vh;
+  }
+
+  .but {
+    background-color: rgb(155, 203, 235);
+    border: none;
+  }
+
+  .login-btn {
+    background-color: hsl(50, 86%, 59%);
+    border: none;
+    height: 5vh;
+    text-align: center;
+    width: 10vw;
+  }
+
+  .login-btn:active {
+    background-color: hsl(26, 95%, 61%);
+    border: none;
+    text-align: center;
+  }
+
+  input {
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .password {
+    height: 5vh;
+    width: 20vw;
+  }
+
+  .button-category {
+    border: none;
+    border-radius: 50px;
+    height: 5vh;
+    text-align: center;
+    width: 15vw;
+  }
+
+  .container-search-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputsearch {
+    margin-right: 2vw;
+  }
+
+}
+
+@media screen and ( max-device-width : 480px ) {
+
+  .password {
+    height: 5vh;
+    width: 20vw;
+  }
+
+  .login {
+    align-items: center;
+    background-color: hsl(26, 95%, 61%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: center;
+    width: 70vw;
+  }
+
+  .container-login {
+    border: 50px;
+    margin-left: 10vh;
+    margin-top: 30vh;
+  }
+
+  .container-search-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inputsearch {
+    margin-right: 2vw;
+  }
+
+  .foto-foods {
+    height: 15vh;
+    width: 25vw;
+  }
+
+  .ingredient-details {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: center;
+    width: 95%;
+  }
+
+  .video {
+    height: 30vh;
+    width: 100%;
+  }
+
+  input {
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .button-category {
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .login-btn {
+    background-color: hsl(50, 86%, 59%);
+    border: none;
+    color: hsl(204, 67%, 76%);
+    height: 5vh;
+    text-align: center;
+    width: 10vw;
+  }
+
+  .login-btn:active {
+    background-color: hsl(26, 95%, 61%);
+    border: none;
+    color: hsl(204, 67%, 76%);
+    text-align: center;
+  }
+}
+
+.card-recipes-favorites {
+  align-items: center;
+  background-color: rgb(155, 203, 235);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.details-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container-card-recipes-favorites {
+  align-items: center;
+  background-color: rgb(155, 203, 235);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-buton-recipes-favorites {
+  align-items: center;
+  background-color: rgb(155, 203, 235);
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.container-buton-profile {
+  display: flex;
+  gap: 10px;
+}
+
+.buton-recipes-favorites {
+  background-color: hsl(157, 83%, 35%);
+  border: none;
+  color: #464646;
+  font-family: sans-serif;
+  margin: 35px;
+  width: 30%;
+}
+
+.container-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.butons-favorite {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.butons-favorite > button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
