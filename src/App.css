@@ -200,6 +200,7 @@ footer {
   .login-btn {
     background-color: hsl(50, 86%, 59%);
     border: none;
+    border-radius: 50px;
     height: 5vh;
     text-align: center;
     width: 10vw;
