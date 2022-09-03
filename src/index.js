@@ -8,7 +8,7 @@ import FoodsProvider from './context/FoodsProvider';
 import DrinksProvider from './context/DrinksProvider';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={ process.env.PUBLIC_URL }>
     <FoodsProvider>
       <DrinksProvider>
         <App />

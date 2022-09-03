@@ -16,15 +16,8 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "cy": "cypress run",
-    "cy:open": "cypress open",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test-coverage": "react-scripts test --coverage --watchAll=false",
-    "eject": "react-scripts eject",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
-    "lint:styles": "npx stylelint '**/*.css'"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -71,6 +64,10 @@
       "src/tests"
     ]
   },
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "homepage": "https://andre09999.github.io/App-De-Receitas", 
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build && cp build/index.html build/404.html"
+  }
 }
